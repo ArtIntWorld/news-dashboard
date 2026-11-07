@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
+<generator>NFE/5.0</generator><title>Technology - Latest - Google News</title>
+<link>https://news.google.com/topics/X?hl=en-IN&amp;gl=IN&amp;ceid=IN:en</link>
+<language>en-IN</language>
+<lastBuildDate>Sat, 07 Nov 2026 13:30:00 GMT</lastBuildDate>
+
+<!-- 1: normal item, title suffix, description that only repeats the title -->
+<item>
+<title>Chip maker opens new plant in Pune - The Tech Daily</title>
+<link>https://news.google.com/rss/articles/AAA111?oc=5</link>
+<guid isPermaLink="false">AAA111</guid>
+<pubDate>Sat, 07 Nov 2026 10:15:00 GMT</pubDate>
+<description>&lt;a href="https://news.google.com/rss/articles/AAA111?oc=5" target="_blank"&gt;Chip maker opens new plant in Pune&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;The Tech Daily&lt;/font&gt;</description>
+<source url="https://www.techdaily.example">The Tech Daily</source>
+</item>
+
+<!-- 2: a real summary with HTML and entities, timezone offset in pubDate -->
+<item>
+<title>Startups bet on &amp;quot;quantum&amp;quot; sensors - Science Wire</title>
+<link>https://www.sciencewire.example/2026/11/quantum-sensors?utm_source=rss</link>
+<pubDate>Sat, 07 Nov 2026 16:45:00 +0530</pubDate>
+<description>&lt;p&gt;Investors   poured &lt;b&gt;$2 billion&lt;/b&gt; into &amp;amp; around   sensor startups this year.&lt;/p&gt;</description>
+<source url="https://www.sciencewire.example">Science Wire</source>
+</item>
+
+<!-- 3: missing source element: falls back to the link host -->
+<item>
+<title>Open-source model tops coding benchmark</title>
+<link>https://www.codenews.example/articles/benchmark</link>
+<pubDate>Sat, 07 Nov 2026 08:00:00 GMT</pubDate>
+</item>
+
+<!-- 4: duplicate of item 2 by canonical URL (tracking params differ), older -->
+<item>
+<title>Startups bet on quantum sensors (update) - Science Wire</title>
+<link>https://www.sciencewire.example/2026/11/quantum-sensors?utm_medium=feed#top</link>
+<pubDate>Fri, 06 Nov 2026 09:00:00 GMT</pubDate>
+<source url="https://www.sciencewire.example">Science Wire</source>
+</item>
+
+<!-- 5: duplicate of item 1 by title, different outlet, older -->
+<item>
+<title>Chip Maker Opens New Plant in Pune! - Other Paper</title>
+<link>https://otherpaper.example/chip-plant</link>
+<pubDate>Sat, 07 Nov 2026 07:00:00 GMT</pubDate>
+<source url="https://otherpaper.example">Other Paper</source>
+</item>
+
+<!-- 6: dated in the future: dropped -->
+<item>
+<title>Tomorrow's launch already reported - Time Travel Times</title>
+<link>https://future.example/launch</link>
+<pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+<source url="https://future.example">Time Travel Times</source>
+</item>
+
+<!-- 7: older than 7 days: dropped -->
+<item>
+<title>Old phone review - Archive</title>
+<link>https://archive.example/old-phone</link>
+<pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+<source url="https://archive.example">Archive</source>
+</item>
+
+<!-- 8: malformed: no title -->
+<item>
+<link>https://notitle.example/x</link>
+<pubDate>Sat, 07 Nov 2026 09:00:00 GMT</pubDate>
+</item>
+
+<!-- 9: malformed: no link -->
+<item>
+<title>Headline without a link - Nowhere</title>
+<pubDate>Sat, 07 Nov 2026 09:00:00 GMT</pubDate>
+</item>
+
+<!-- 10: malformed: unparseable date -->
+<item>
+<title>Bad date story - Somewhere</title>
+<link>https://somewhere.example/bad-date</link>
+<pubDate>not a date</pubDate>
+<source url="https://somewhere.example">Somewhere</source>
+</item>
+</channel></rss>

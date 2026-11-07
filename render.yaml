@@ -1,0 +1,19 @@
+# Render Blueprint: New → Blueprint → pick this repository.
+services:
+  - type: web
+    name: news-dashboard
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    # US region: Google may show a cookie-consent page to European data centres
+    # instead of the RSS feed.
+    region: oregon
+    # Free sleeps after ~15 min without visitors (30–60 s wake-up, cache starts empty).
+    # Change to "starter" to keep it always on.
+    plan: free
+    healthCheckPath: /api/ready
+    autoDeploy: true
+    envVars:
+      - key: PREWARM_COUNTRIES
+        value: IN,US,CA
+      - key: LOG_LEVEL
+        value: INFO

@@ -1,0 +1,18 @@
+# Only backend/ and frontend/ sources go into the image.
+.git
+node_modules
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/dist
+**/.env
+**/.env.*
+!**/.env.example
+backend/tests
+# Original Create React App starter at the repo root (not part of the deployed app)
+src
+public
+package.json
+package-lock.json
+README.md

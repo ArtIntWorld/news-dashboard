@@ -1,0 +1,13 @@
+{
+  "_comment": "How each section maps to a feed. A section with a topic uses the Google News topic feed for countries with an edition. keywords is used for search feeds and for the fallback search in countries without an edition. Tune freely; no code change needed.",
+  "technology": {
+    "topic": "TECHNOLOGY",
+    "keywords": "technology OR software OR internet OR AI OR smartphone OR startup"
+  },
+  "nature": {
+    "keywords": "environment OR wildlife OR climate OR biodiversity OR conservation"
+  },
+  "society": {
+    "keywords": "education OR health OR culture OR community OR society"
+  }
+}

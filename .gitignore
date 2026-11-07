@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local settings (never commit); the .env.example files are the templates
+.env
+**/.env
+!**/.env.example
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Frontend build output
+dist/

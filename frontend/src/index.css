@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+/* Dark mode follows a .dark class on <html>, set from the reader's choice or the system
+   setting (see index.html and src/lib/theme.ts). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Semantic colours. Components use these (bg-panel, text-muted, border-line, ...) so one
+   class works in both themes; the values switch below. */
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-panel: var(--panel);
+  --color-panel-solid: var(--panel-solid);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+}
+
+:root {
+  --canvas: #f3f1fb;
+  --panel: rgb(255 255 255 / 0.82);
+  --panel-solid: #ffffff;
+  --panel-2: #faf9ff;
+  --line: #e3dff4;
+  --ink: #15142e;
+  --muted: #59577a;
+  --faint: #8c89a8;
+  --accent: #7c3aed;
+  --accent-ink: #6d28d9;
+  --accent-soft: rgb(124 58 237 / 0.08);
+  --sky-glow: rgb(217 70 239 / 0.18);
+}
+
+.dark {
+  --canvas: #05061a;
+  --panel: rgb(17 18 46 / 0.66);
+  --panel-solid: #11122e;
+  --panel-2: rgb(255 255 255 / 0.035);
+  --line: rgb(167 139 250 / 0.16);
+  --ink: #eef0ff;
+  --muted: #a5a8d0;
+  --faint: #7a7da8;
+  --accent: #8b5cf6;
+  --accent-ink: #c4b5fd;
+  --accent-soft: rgb(139 92 246 / 0.16);
+  --sky-glow: rgb(217 70 239 / 0.35);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    @apply bg-canvas text-ink antialiased;
+    font-family:
+      ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    min-height: 100dvh;
+    background:
+      radial-gradient(60rem 40rem at 85% -10%, var(--sky-glow), transparent 60%),
+      radial-gradient(50rem 30rem at -10% 110%, rgb(99 102 241 / 0.14), transparent 60%),
+      var(--canvas);
+    background-attachment: fixed;
+  }
+}
